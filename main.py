@@ -34,4 +34,4 @@ arguments_function("Number 1", "number 2")
 arguments_function("A New number 1", "the best number 2")
 print_something("Julio", 57)
 print_default("Ronan")
-
+print_default(age=66)
