@@ -44,3 +44,10 @@ def print_people(*people):
 
 
 print_people("ronan", "Aoife", "Gizzy", "Peanut", "thierry", "Dennis", "Ian", "Emmanuel")
+
+def return_something(num1, num2):
+    break_line()
+    return num1+num2
+
+
+print(return_something(5, 7))
