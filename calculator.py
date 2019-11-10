@@ -10,33 +10,24 @@ run = True
 def perform_math():
     global run
     global previous
-    equation = input("Enter Equation")
+    equation = ""
+
+    if previous == 0:
+        equation = input("Enter Equation")
+    else:
+        equation = input(str(previous))
+
     if equation == 'quit':
+        print("Goodbye Nerd")
         run = False
     else:
         equation = re.sub('[a-zA-z,.():" "]', '', equation)
-        previous = eval(equation)
-        print("You typed", equation)
-        print("The answer is", eval(equation))
+        if previous == 0:
+            previous = eval(equation)
+            print(eval(equation))
+        else:
+            previous = eval(str(previous) + equation)
 
 
 while run:
     perform_math()
-
-
-def add(x, y):
-    return x+y
-
-
-def subtract(x, y):
-    return x-y
-
-
-def multiply(x, y):
-    return x*y
-
-
-def divide(x, y):
-    return x/y
-
-
