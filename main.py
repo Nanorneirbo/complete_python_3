@@ -35,3 +35,12 @@ arguments_function("A New number 1", "the best number 2")
 print_something("Julio", 57)
 print_default("Ronan")
 print_default(age=66)
+
+
+def print_people(*people):
+    break_line()
+    for person in people:
+        print("This person is", person)
+
+
+print_people("ronan", "Aoife", "Gizzy", "Peanut", "thierry", "Dennis", "Ian", "Emmanuel")
