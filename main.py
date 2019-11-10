@@ -14,12 +14,24 @@ def break_line():
 
 
 def arguments_function(first, second):
+    break_line()
     print("this is the first one - " + first)
     print("this is the second - " + second)
 
-break_line()
-my_function()
-break_line()
-arguments_function("Number 1", "number 2")
 
+def print_something(name, age):
+    break_line()
+    print("My name is", name, " and my age is", age)
+
+
+def print_default(name="Someone", age="Unkown"):
+    break_line()
+    print("My name is", name, " and my age is", age)
+
+
+my_function()
+arguments_function("Number 1", "number 2")
+arguments_function("A New number 1", "the best number 2")
+print_something("Julio", 57)
+print_default("Ronan")
 
